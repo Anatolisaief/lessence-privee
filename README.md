@@ -2,6 +2,8 @@
 
 Este es un sitio web dinámico para la tienda ficticia **L’Essence Privée**, especializada en perfumes artesanales. El sitio permite visualizar la colección de perfumes y realizar pedidos a través de un formulario conectado a una base de datos MySQL.
 
+![Pantalla principal de L’Essence Privée](images/captura.png)
+
 ##  Estructura del Proyecto
 ```
 ├── css/
