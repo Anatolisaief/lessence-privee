@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1rem;
+    color: #999999;
+    background-color: #09070A;
+}
+
+header {
+    background-image: url('../images/perfumes.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #09070A;
+    padding: 0.5rem;
+
+}
+
+nav a {
+    color: rgb(148, 148, 148);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: all .3s ease-in-out;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+.menu-toggle {
+    display: none;
+    /* oculto por defecto */
+    font-size: 2.5rem;
+    color: rgb(148, 148, 148);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ocultar menú en móviles por defecto */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+
+.hero {
+    width: 100%;
+    background-image: url('images/perfumes.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    margin-top: 300px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 250px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Tangerine", cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 9rem;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 6rem;
+
+}
+
+h3 {
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.hero p {
+    font-size: 1.5rem;
+
+}
+
+section {
+    padding: 4rem 2rem;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section h2 {
+    margin-bottom: 50px;
+}
+
+#nosotros,
+.card,
+form {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+
+#nosotros h2 {
+
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#nosotros p {
+
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.imagenes_p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+
+}
+
+.nosotros-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2.3rem;
+    flex-wrap: wrap;
+
+}
+
+.nosotros-imagenes img {
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+.perfumes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background: #222222;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-imagen {
+    width: 35%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    width: 65%;
+    padding: 2rem;
+}
+
+.card-content p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
+
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.precio {
+    text-align: center;
+}
+
+
+form {
+    background: #515151;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.primera_columna,
+.segunda_columna {
+    width: 45%;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 30%;
+    margin-top: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #222;
+}
+
+
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    border-top: 1px solid #333;
+    font-family: "Cormorant Garamond", serif;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+footer .redes-sociales a {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.5rem auto;
+    width: fit-content;
+    border: none;
+    white-space: nowrap;
+
+}
+
+.terminos input {
+    margin: 0;
+}
+
+.terminos label {
+    margin: 0;
+    width: auto;
+    font-size: 1rem;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.terminos a {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    font-weight: 800;
+
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .hero-content {
+        height: 200px;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .card.reverse {
+        flex-direction: column;
+    }
+
+    .card-imagen,
+    .card-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .columnas {
+        flex-direction: column;
+    }
+
+    .primera_columna,
+    .segunda_columna {
+        width: 100%;
+    }
+
+    form input[type="submit"] {
+        width: 60%;
+    }
+
+    .nosotros-imagenes img {
+        width: 45%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        /* ocultamos links */
+        flex-direction: column;
+        width: 100%;
+        background: #09070A;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0.5rem 0;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+        text-align: center;
+        color: rgb(148, 148, 148);
+    }
+
+    .nav-links a:hover {
+        color: white;
+    }
+
+    /* cuando está activo el menú */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #nosotros,
+    .card,
+    form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        padding: 0.3rem 0;
+    }
+
+    .hero-content {
+        height: 150px;
+        margin-top: 200px;
+    }
+
+    .nosotros-imagenes img {
+        width: 90%;
+        height: 200px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content p {
+        font-size: 1.2rem;
+    }
+
+    #descripcion {
+        font-size: 1rem;
+    }
+
+    .perfumes {
+        gap: 3rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input,
+    form select {
+        padding: 1rem;
+    }
+
+    form input[type="submit"] {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    footer .redes-sociales {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
